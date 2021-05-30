@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import ListItem from './ListItem';
-import {DataContext} from './context/DataProvider';
+import {DataContext} from '../context/DataProvider';
 
 const List = () => {
   const [todos, setTodos] = useContext(DataContext);

@@ -1,7 +1,7 @@
 import React from 'react';
-import FormInput from './components/FormInput';
-import List from './components/List';
-import Footer from './components/Footer';
+import FormInput from './components/form/FormInput';
+import List from './components/tasks/List';
+import Footer from './components/footer/Footer';
 import {DataContextProvider} from './components/context/DataProvider';
 
 function App() {
