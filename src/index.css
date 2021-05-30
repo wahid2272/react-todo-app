@@ -97,6 +97,13 @@ ul li button:disabled{
 label{
   cursor: pointer;
 }
+.about{
+  text-align: center;
+  padding-top: 4rem;
+}
+.about p {
+  padding: 5px;
+}
 @media (max-width: 400px){
   .App{
     padding: 10px;
@@ -104,5 +111,4 @@ label{
 }
 h2{
   text-align: center;
-  color: crimson;
 }

@@ -1,3 +1,6 @@
+import { withRouter } from "react-router-dom";
+import React from "react";
+
 //Material UI
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
@@ -10,8 +13,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuIcon from "@material-ui/icons/Menu";
-import React from "react";
-import { withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -131,4 +132,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
