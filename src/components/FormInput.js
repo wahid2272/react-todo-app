@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import {DataContext} from './context/DataContext';
+import {DataContext} from './context/DataProvider';
 
 const FormInput = () => {
   const [todos, setTodos] = useContext(DataContext);

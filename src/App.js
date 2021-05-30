@@ -2,7 +2,7 @@ import React from 'react';
 import FormInput from './components/FormInput';
 import List from './components/List';
 import Footer from './components/Footer';
-import {DataContextProvider} from './components/DataProvider';
+import {DataContextProvider} from './components/context/DataProvider';
 
 function App() {
   return (
