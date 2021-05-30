@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-//import DataContext from './DataContext';
 const DataContext = React.createContext();
 
 const DataContextProvider = (props) => {

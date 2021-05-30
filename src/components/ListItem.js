@@ -1,14 +1,14 @@
 import React from 'react';
 
-const ListItem = ({todo, id}) => {
+const ListItem = ({todo, id, checkCompleteStatus}) => {
   return (
     <div>
       <li>
-        <label htmlFor={id}>
-          <input type="checkbox" id={id} />
+        <label htmlFor={id} className={todo.complete ? "active" : ""} >
+          <input type="checkbox" id={id} checked={todo.complete} onChange={() => checkCompleteStatus(id)} />
           {todo.name}
         </label>
-        <button>Edit</button>
+        <button disabled={todo.complete}>Edit</button>
       </li>
     </div>
   );
