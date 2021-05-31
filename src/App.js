@@ -2,10 +2,11 @@ import React from 'react';
 import Home from './components/home/Home';
 import Header from './components/header/Header';
 import About from './components/about/About';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
+
+// Material UI
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 
 function App() {
