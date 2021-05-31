@@ -1,6 +1,9 @@
 import React, {useContext, useState} from 'react';
 import {DataContext} from '../context/DataProvider'
 
+// Material UI
+import Button from '@material-ui/core/Button';
+
 
 const Footer = () => {
   const [checkAll, setCheckAll] = useState(false);
@@ -31,7 +34,15 @@ const Footer = () => {
             <input type="checkbox" name="all" id="all" onChange={handleCheckAll} checked={checkAll} />
             Mark All Complete
           </label>
-          <button id="delete" onClick={handleDelete}>Remove Completed Task</button>
+          <Button
+          size="small"
+          type="submit"
+          variant="contained"
+          id="delete" 
+          onClick={handleDelete}
+        >
+          Remove Completed Task
+        </Button>
         </div>
     </div>
   );

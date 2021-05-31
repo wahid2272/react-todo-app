@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 
+// Material UI
+import Button from '@material-ui/core/Button';
+
 const ListItem = ({todo, id, checkCompleteStatus, handleEditTodos}) => {
   const [edit, setEdit] = useState(false);
   const [editValue, setEditValue] = useState(todo.name)
@@ -22,7 +25,15 @@ const ListItem = ({todo, id, checkCompleteStatus, handleEditTodos}) => {
       <div>
         <li>
           <input type="text" id={editValue} value={editValue} name={editValue} onChange={e => setEditValue(e.target.value)}/>
-          <button onClick={() => handleConfirm(id)}>Confirm</button>
+          <Button
+          size="small"
+          color="primary"
+          type="submit"
+          variant="contained"
+          onClick={() => handleConfirm(id)}
+        >
+          Confirm
+        </Button>
         </li>
       </div>
     );
@@ -35,7 +46,16 @@ const ListItem = ({todo, id, checkCompleteStatus, handleEditTodos}) => {
             <input type="checkbox" id={id} checked={todo.complete} onChange={() => checkCompleteStatus(id)} />
             {todo.name}
           </label>
-          <button disabled={todo.complete} onClick={handleEdit} >Edit</button>
+          <Button
+          size="small"
+          color="primary"
+          type="submit"
+          variant="contained"
+          disabled={todo.complete}
+          onClick={handleEdit}
+          >
+          Edit
+        </Button>
         </li>
       </div>
     );

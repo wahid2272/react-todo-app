@@ -7,11 +7,6 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .ToDo-App{
   max-width: 500px;
   background-color: #fff;
@@ -23,6 +18,7 @@ code {
 }
 
 h1{
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   letter-spacing: 2px;
   font-weight: 900;
